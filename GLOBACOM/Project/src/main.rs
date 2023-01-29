@@ -16,14 +16,20 @@ use std::io;
 
 
 
-    if  input1 == 'A'
+if  input1 == 'A'
     {
     let mut file = std::fs::File::open("globacom.sql").unwrap();
     let mut contents = String::new();
     file.read_to_string(&mut contents).unwrap();
     print!("{}",contents );
 }
-
+else if input1 == 'B'
+{
+    let mut file4 = std::fs::File::open("globacom.sql").unwrap();
+    let mut contents4 = String::new();
+    file4.read_to_string(&mut contents4).unwrap();
+    print!("{}",contents4 );
+}
 
  else if input1 == 'C'
  {  
@@ -32,7 +38,7 @@ use std::io;
  	file1.read_to_string(&mut contents1).unwrap();
     print!("{}",contents1 );
 }
-else if input1 == 'D'
+ else if input1 == 'D'
 {
 	let mut file2 = std::fs::File::open("customer_tb.sql").unwrap();
 	let mut contents2 = String::new();
